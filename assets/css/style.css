@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@100&display=swap");
+
+:root {
+  --blue: #180c88;
+  --pink: #eb1b74;
+  --yellow: #fcb900;
+  --brown: #c59a37;
+  --light-pink: #e8d4;
+  --bg-light: #f8f8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+header,
+header .container {
+  height: 100px;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed; */
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  width: 100px;
+  display: block;
+  margin-left: 250px;
+}
+
+.logo img {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+label,
+input {
+  display: none;
+}
+
+nav a,
+footer a {
+  font-family: "Inter", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a.active,
+nav a.active:hover {
+  color: var(--brown);
+  opacity: 0.8;
+}
+
+nav a:hover,
+footer a:hover {
+  color: var(--brown);
+}
+nav ul {
+  margin-right: 280px;
+}
+nav li {
+  margin: 0px 20px;
+  display: inline-block;
+}
+
+/*/work */
+.work {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 10px;
+}
+
+.work .card {
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid #a08787;
+  padding: 10px;
+}
+
+.work .card img {
+  width: 370px;
+  height: 250px;
+}
+.work .card h3 {
+  text-align: center;
+  font-size: 1.7em;
+  line-height: 1.25em;
+}
+
+.work .card a {
+  text-decoration: none;
+}
+
+.card .button {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  border: 2px solid;
+  padding: 16px 12px 18px;
+  text-decoration: none;
+}
+.card .button:hover {
+  background-color: #c59a37;
+  color: white;
+}
+
+.section-title {
+  margin-top: 80px;
+  text-align: center;
+
+  text-align: center;
+  font-size: 25px;
+}
+
+.main-banner {
+  height: calc(100vh - 122px);
+}
+.bg-full {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-banner .title {
+  font-size: 27px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 20px;
+}
+.main-banner h1 {
+  font-size: 75px;
+  line-height: 85px;
+  color: #fff;
+  margin: 0 0 23px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  word-spacing: 3px;
+}
+
+.main-banner .sub-title {
+  font-size: 26px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 23px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  border: 2px solid;
+  padding: 16px 12px 18px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.overlay {
+  z-index: 1;
+  position: relative;
+}
+
+.overlay:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.85;
+  background: #000;
+}
+
+.text-center {
+  padding: 240px;
+  text-align: center;
+}
+
+.btn {
+  border-color: #c59a37;
+  color: #c59a37;
+}
+
+.btn:hover {
+  background-color: #c59a37;
+  color: #ffffff;
+}
+
+.companies,
+.portfolio {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 25px;
+}
+.ourporfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* .ourporfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+} */
+
+#portfolio .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.work .card {
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+}
+
+.work .card h3 {
+  color: var(--blue);
+  font-size: 1.785em;
+  font-weight: 700;
+  line-height: 1.25em;
+}
+
+.work .card .icons {
+  margin: 20px 0px;
+  font-size: 32px;
+}
+
+.work .card p {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgb(211, 205, 196);
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+}
+footer img {
+  width: 100px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+footer p {
+  margin-right: 100px;
+}
+
+footer h1 {
+  color: var(--brown);
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+/*Mobile */
+@media screen and (max-width: 765px) {
+  .logo {
+    width: 100px;
+    display: block;
+    margin-left: 10px;
+  }
+
+  .text-center {
+    padding: 120px;
+    padding-left: 60px;
+    text-align: center;
+  }
+  .main-banner h1 {
+    line-height: 1.2em;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label,
+  input {
+    display: block;
+  }
+
+  .toggle-menu:checked + nav {
+    z-index: 2;
+    display: block;
+  }
+
+  .toggle-menu:not(:checked) ~ nav {
+    display: none;
+  }
+
+  nav {
+    /* display: none; */
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+
+  nav,
+  nav ul {
+    width: 100%;
+    background-color: #c59a37;
+  }
+  nav a {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px;
+  }
+
+  .main-banner h1 {
+    font-size: 55px;
+    line-height: 65px;
+    color: var(--brown);
+    margin: 0 0 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .work .card p {
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .companies img {
+    width: 100%;
+  }
+
+  .work .card h3 {
+    font-size: 1.4em;
+  }
+  .ourporfolio,
+  .work,
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer h3 {
+    margin-top: 110px;
+  }
+  .footer .ourporfolio img {
+    padding: 20px;
+  }
+
+  .portfolio-title {
+    font-size: 22px;
+  }
+  .ourporfolio img {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
